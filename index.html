@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="firebase.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/8a779e811f.js"
+      crossorigin="anonymous"
+    ></script>
+   
+    <title>Spotify</title>
+  </head>
+  <body>
+   <div class="login-page">
+    <div class="container">
+      <form>
+        <div class="header">
+          <i class="fa fa-spotify"></i>
+          <h2>Log in to Spotify</h2>
+        </div>
+        <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+        <div class="buttons">
+          <button>
+            <img src="img/google.svg" alt="" />
+            <span>Continue with Google</span>
+          </button>
+          <button>
+            <img src="img/facebook.svg" alt=""></i> <span>Continue with Facebook</span>
+          </button>
+          <button>
+            <img src="img/apple.svg" alt=""> <span>Continue with Apple</span>
+          </button>
+        </div>
+        <hr/>
+        <div class="inputs">
+          <div class="email">
+            <span>Email or username</span>
+            <input type="email" placeholder="Email or username"  id="email" />
+          </div>
+          <div class="password">
+            <span>Password</span>
+            <div class="password-input">
+              <input type="password" placeholder="Password"  id="password"/>
+              <i id="password-visibility" class="fa-solid fa-eye" ></i>
+            </div>
+          </div>
+        </div>
+        <div class="login-button">
+          <button type="submit" class="login" id="login">Log In</button>
+          <a href="#" id="forgot">Forgot your password?</a>
+          <div class="sign-up">
+            <p>Don't have an account? </p>
+            <a href="sign-up.html" id="sign">Sign up for Spotify</a>
+          </div>
+        </div>
+      </form>
+    </div>
+   </div>
+  </body>
+</html>
